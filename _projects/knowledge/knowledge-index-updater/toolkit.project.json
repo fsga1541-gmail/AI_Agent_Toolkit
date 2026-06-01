@@ -1,0 +1,82 @@
+{
+  "id": "knowledge.knowledge-index-updater",
+  "category": "knowledge",
+  "name": "knowledge-index-updater",
+  "title": "Knowledge Index Updater",
+  "module_path": "_projects/knowledge/knowledge-index-updater",
+  "main_path": "_projects/knowledge/knowledge-index-updater/_main",
+  "version": "1.0.0",
+  "version_policy": "semver",
+  "version_notes": "Initial stable toolkit project version after migration from retired internal source material.",
+  "outputs": [
+    {
+      "kind": "copy",
+      "source": "_main/skill/README.md",
+      "output": "skills/knowledge-index-updater/README.md",
+      "notes": "Former standalone skill README copied from preserved _main skill source.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/skill/SKILL.md",
+      "output": "skills/knowledge-index-updater/SKILL.md",
+      "notes": "Former standalone skill entrypoint copied from preserved _main skill source.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/skill/agents/claude.md",
+      "output": "skills/knowledge-index-updater/agents/claude.md",
+      "notes": "Former standalone Claude platform note copied from preserved _main skill source.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/skill/agents/openai.yaml",
+      "output": "skills/knowledge-index-updater/agents/openai.yaml",
+      "notes": "Former standalone OpenAI platform metadata copied from preserved _main skill source.",
+      "fidelity": "exact"
+    }
+  ],
+  "writes": {
+    "allowed": [
+      "skills/knowledge-index-updater/SKILL.md",
+      "skills/knowledge-index-updater/README.md",
+      "skills/knowledge-index-updater/agents/claude.md",
+      "skills/knowledge-index-updater/agents/openai.yaml",
+      "mcp/registry/projects.registry.json"
+    ],
+    "denied": [
+      ".env*",
+      ".n8n-local/**",
+      ".tmp/**",
+      "**/*credential*",
+      "**/*.key",
+      "**/*.pem",
+      "node_modules/**",
+      "dist/**",
+      "_dist/**"
+    ]
+  },
+  "requires_approval": true,
+  "run_commands_by_default": false,
+  "live_actions": "explicit_confirmation_only",
+  "ci_live_actions": false,
+  "project": {
+    "name": "Knowledge Index Updater",
+    "category": "knowledge",
+    "summary": "Reusable AI skill for maintaining a lightweight Notion Knowledge Index backed by Notion and GitHub source keys."
+  },
+  "surface": {
+    "publish_as": "skill",
+    "skill": {
+      "status": "published",
+      "path": "skills/knowledge-index-updater",
+      "summary": "Helps agents create, update, de-duplicate, and schedule checks for a Notion Knowledge Index using Notion and GitHub identity keys."
+    },
+    "mcp": {
+      "status": "not_applicable",
+      "summary": "No MCP surface is published for this standalone skill."
+    }
+  }
+}
