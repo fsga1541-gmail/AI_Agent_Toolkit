@@ -1,0 +1,339 @@
+{
+  "id": "n8n.local-setup",
+  "category": "n8n",
+  "name": "local-setup",
+  "title": "Local n8n Setup",
+  "module_path": "_projects/n8n/local-setup",
+  "main_path": "_projects/n8n/local-setup/_main",
+  "version": "3.0.0",
+  "version_policy": "semver",
+  "version_notes": "Intent-first n8n local setup launcher/menu, Compose ngrok tunnel flow, Hostinger first-login expansion, desktop shortcut launcher, and optional AI-coding-agent MCP feature references restored as secondary surfaces.",
+  "outputs": [
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/skills/n8n-local-setup/SKILL.md",
+      "output": "skills/n8n-local-setup/SKILL.md",
+      "notes": "Published skill generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/skills/n8n-local-setup/README.md",
+      "output": "skills/n8n-local-setup/README.md",
+      "notes": "Published skill README generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/Page 1 - Local Setup.md",
+      "output": "skills/n8n-local-setup/references/n8n/local-setup.md",
+      "notes": "Full local setup guide copied from preserved source into the copyable skill folder.",
+      "fidelity": "exact",
+      "text_rewrites": [
+        {
+          "from": "./templates/local-stack/docker-compose.yml",
+          "to": "../../templates/local-stack/docker-compose.yml"
+        },
+        {
+          "from": "./templates/local-stack/.env.example",
+          "to": "../../templates/local-stack/.env.example"
+        },
+        {
+          "from": "./templates/local-stack/_n8n-local.cmd",
+          "to": "../../templates/local-stack/_n8n-local.cmd"
+        },
+        {
+          "from": "./templates/local-stack/n8n-local-desktop-shortcut.cmd",
+          "to": "../../templates/local-stack/n8n-local-desktop-shortcut.cmd"
+        },
+        {
+          "from": "./templates/local-stack/scripts/n8n-local-menu.ps1",
+          "to": "../../templates/local-stack/scripts/n8n-local-menu.ps1"
+        },
+        {
+          "from": "](./templates/local-stack/)",
+          "to": "](../../templates/local-stack/)"
+        },
+        {
+          "from": "./Page%202%20-%20Hostinger%20VPS.md",
+          "to": "hostinger-vps.md"
+        },
+        {
+          "from": "../../../../skills/n8n-agent-rules/",
+          "to": "../../../n8n-agent-rules/"
+        }
+      ]
+    },
+    {
+      "kind": "copy",
+      "source": "_main/Page 2 - Hostinger VPS.md",
+      "output": "skills/n8n-local-setup/references/n8n/hostinger-vps.md",
+      "notes": "Hostinger VPS setup guide copied from preserved source into the copyable skill folder.",
+      "fidelity": "exact",
+      "text_rewrites": [
+        {
+          "from": "./Page%201%20-%20Local%20Setup.md",
+          "to": "local-setup.md"
+        }
+      ]
+    },
+    {
+      "kind": "copy",
+      "source": "_main/mcp setup - codex.md",
+      "output": "skills/n8n-local-setup/references/ai-agent-platforms/codex.md",
+      "notes": "Optional Codex AI-coding-agent MCP feature setup guide copied from preserved source.",
+      "fidelity": "exact",
+      "text_rewrites": [
+        {
+          "from": "./Page%201%20-%20Local%20Setup.md",
+          "to": "../n8n/local-setup.md"
+        },
+        {
+          "from": "./templates/mcp-configs/codex-mcp-config.md",
+          "to": "../../templates/mcp-configs/codex-mcp-config.md"
+        }
+      ]
+    },
+    {
+      "kind": "copy",
+      "source": "_main/mcp setup - claude code.md",
+      "output": "skills/n8n-local-setup/references/ai-agent-platforms/claude-code.md",
+      "notes": "Optional Claude Code AI-coding-agent MCP feature setup guide copied from preserved source.",
+      "fidelity": "exact",
+      "text_rewrites": [
+        {
+          "from": "./Page%201%20-%20Local%20Setup.md",
+          "to": "../n8n/local-setup.md"
+        },
+        {
+          "from": "./templates/mcp-configs/claude-mcp-config.md",
+          "to": "../../templates/mcp-configs/claude-mcp-config.md"
+        }
+      ]
+    },
+    {
+      "kind": "copy",
+      "source": "_main/mcp setup - opencode.md",
+      "output": "skills/n8n-local-setup/references/ai-agent-platforms/opencode.md",
+      "notes": "Optional OpenCode AI-coding-agent MCP feature setup guide copied from preserved source.",
+      "fidelity": "exact",
+      "text_rewrites": [
+        {
+          "from": "./Page%201%20-%20Local%20Setup.md",
+          "to": "../n8n/local-setup.md"
+        },
+        {
+          "from": "./templates/mcp-configs/opencode-mcp-config.md",
+          "to": "../../templates/mcp-configs/opencode-mcp-config.md"
+        }
+      ]
+    },
+    {
+      "kind": "copy",
+      "source": "_main/mcp setup - antigravity.md",
+      "output": "skills/n8n-local-setup/references/ai-agent-platforms/antigravity.md",
+      "notes": "Optional Antigravity AI-coding-agent MCP feature setup guide copied from preserved source.",
+      "fidelity": "exact",
+      "text_rewrites": [
+        {
+          "from": "./Page%201%20-%20Local%20Setup.md",
+          "to": "../n8n/local-setup.md"
+        },
+        {
+          "from": "./templates/mcp-configs/antigravity-mcp-config.md",
+          "to": "../../templates/mcp-configs/antigravity-mcp-config.md"
+        }
+      ]
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/references/n8n/README.md",
+      "output": "skills/n8n-local-setup/references/n8n/README.md",
+      "notes": "Skill-local n8n reference index generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/references/ai-agent-platforms/README.md",
+      "output": "skills/n8n-local-setup/references/ai-agent-platforms/README.md",
+      "notes": "Skill-local platform reference index generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/references/ai-agent-platforms/chatgpt-web.md",
+      "output": "skills/n8n-local-setup/references/ai-agent-platforms/chatgpt-web.md",
+      "notes": "ChatGPT web platform overview generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/references/ai-agent-platforms/claude-web.md",
+      "output": "skills/n8n-local-setup/references/ai-agent-platforms/claude-web.md",
+      "notes": "Claude web platform overview generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/local-stack/docker-compose.yml",
+      "output": "skills/n8n-local-setup/templates/local-stack/docker-compose.yml",
+      "notes": "Copy-ready local Docker Compose stack for n8n, Postgres, and Compose ngrok.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/local-stack/.env.example",
+      "output": "skills/n8n-local-setup/templates/local-stack/.env.example",
+      "notes": "Placeholder-only local stack environment template.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/local-stack/_n8n-local.cmd",
+      "output": "skills/n8n-local-setup/templates/local-stack/_n8n-local.cmd",
+      "notes": "Windows launcher for the guided local n8n stack menu.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/local-stack/n8n-local-desktop-shortcut.cmd",
+      "output": "skills/n8n-local-setup/templates/local-stack/n8n-local-desktop-shortcut.cmd",
+      "notes": "Desktop shortcut launcher that delegates to %USERPROFILE%\\.n8n-local\\_n8n-local.cmd.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/local-stack/scripts/n8n-local-menu.ps1",
+      "output": "skills/n8n-local-setup/templates/local-stack/scripts/n8n-local-menu.ps1",
+      "notes": "PowerShell menu for guided local stack start/stop, Compose ngrok tunnel, update, logs, status, browser launch, and backup actions.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/mcp-configs/antigravity-mcp-config.md",
+      "output": "skills/n8n-local-setup/templates/mcp-configs/antigravity-mcp-config.md",
+      "notes": "Optional Antigravity MCP config copied from preserved source.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/mcp-configs/claude-mcp-config.md",
+      "output": "skills/n8n-local-setup/templates/mcp-configs/claude-mcp-config.md",
+      "notes": "Optional Claude MCP config copied from preserved source.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/mcp-configs/codex-mcp-config.md",
+      "output": "skills/n8n-local-setup/templates/mcp-configs/codex-mcp-config.md",
+      "notes": "Optional Codex MCP config copied from preserved source.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "copy",
+      "source": "_main/templates/mcp-configs/opencode-mcp-config.md",
+      "output": "skills/n8n-local-setup/templates/mcp-configs/opencode-mcp-config.md",
+      "notes": "Optional OpenCode MCP config copied from preserved source.",
+      "fidelity": "exact"
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/templates/mcp-configs/README.md",
+      "output": "skills/n8n-local-setup/templates/mcp-configs/README.md",
+      "notes": "Optional MCP config template index generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/packs/codex-n8n-local/README.md",
+      "output": "skills/n8n-local-setup/packs/codex-n8n-local/README.md",
+      "notes": "Skill-local pack README generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "json",
+      "source": "curated_output_for_ai/packs/codex-n8n-local/pack.json",
+      "output": "skills/n8n-local-setup/packs/codex-n8n-local/pack.json",
+      "notes": "Published install pack generated from project-owned curated AI output.",
+      "fidelity": "generated_metadata"
+    },
+    {
+      "kind": "curated",
+      "source": "curated_output_for_ai/packs/claude-code-n8n-local/README.md",
+      "output": "skills/n8n-local-setup/packs/claude-code-n8n-local/README.md",
+      "notes": "Skill-local pack README generated from project-owned curated AI output.",
+      "fidelity": "reviewed_entrypoint"
+    },
+    {
+      "kind": "json",
+      "source": "curated_output_for_ai/packs/claude-code-n8n-local/pack.json",
+      "output": "skills/n8n-local-setup/packs/claude-code-n8n-local/pack.json",
+      "notes": "Published install pack generated from project-owned curated AI output.",
+      "fidelity": "generated_metadata"
+    }
+  ],
+  "writes": {
+    "allowed": [
+      "skills/n8n-local-setup/SKILL.md",
+      "skills/n8n-local-setup/README.md",
+      "skills/n8n-local-setup/references/n8n/local-setup.md",
+      "skills/n8n-local-setup/references/n8n/hostinger-vps.md",
+      "skills/n8n-local-setup/references/ai-agent-platforms/codex.md",
+      "skills/n8n-local-setup/references/ai-agent-platforms/claude-code.md",
+      "skills/n8n-local-setup/references/ai-agent-platforms/opencode.md",
+      "skills/n8n-local-setup/references/ai-agent-platforms/antigravity.md",
+      "skills/n8n-local-setup/references/n8n/README.md",
+      "skills/n8n-local-setup/references/ai-agent-platforms/README.md",
+      "skills/n8n-local-setup/references/ai-agent-platforms/chatgpt-web.md",
+      "skills/n8n-local-setup/references/ai-agent-platforms/claude-web.md",
+      "skills/n8n-local-setup/templates/local-stack/docker-compose.yml",
+      "skills/n8n-local-setup/templates/local-stack/.env.example",
+      "skills/n8n-local-setup/templates/local-stack/_n8n-local.cmd",
+      "skills/n8n-local-setup/templates/local-stack/n8n-local-desktop-shortcut.cmd",
+      "skills/n8n-local-setup/templates/local-stack/scripts/n8n-local-menu.ps1",
+      "skills/n8n-local-setup/templates/mcp-configs/antigravity-mcp-config.md",
+      "skills/n8n-local-setup/templates/mcp-configs/claude-mcp-config.md",
+      "skills/n8n-local-setup/templates/mcp-configs/codex-mcp-config.md",
+      "skills/n8n-local-setup/templates/mcp-configs/opencode-mcp-config.md",
+      "skills/n8n-local-setup/templates/mcp-configs/README.md",
+      "skills/n8n-local-setup/packs/codex-n8n-local/README.md",
+      "skills/n8n-local-setup/packs/codex-n8n-local/pack.json",
+      "skills/n8n-local-setup/packs/claude-code-n8n-local/README.md",
+      "skills/n8n-local-setup/packs/claude-code-n8n-local/pack.json",
+      "mcp/registry/projects.registry.json"
+    ],
+    "denied": [
+      ".env*",
+      ".n8n-local/**",
+      ".tmp/**",
+      "**/*credential*",
+      "**/*.key",
+      "**/*.pem",
+      "**/*.live-export.json",
+      "**/*.live-import.json",
+      "node_modules/**",
+      "dist/**",
+      "_dist/**"
+    ]
+  },
+  "requires_approval": true,
+  "run_commands_by_default": false,
+  "live_actions": "explicit_confirmation_only",
+  "ci_live_actions": false,
+  "project": {
+    "name": "Local n8n Setup",
+    "category": "n8n",
+    "summary": "Preserved local n8n setup guides, Hostinger VPS guidance, Docker Compose local templates, skills-first agent routing, optional AI-coding-agent MCP feature references, and the underscore-prefixed guided launcher."
+  },
+  "surface": {
+    "publish_as": "skill",
+    "skill": {
+      "status": "published",
+      "path": "skills/n8n-local-setup",
+      "summary": "Helps an agent use the safe local n8n Docker Compose stack, guided launcher, Hostinger VPS reference, local stack templates, skills-first agent guidance, and optional AI-coding-agent MCP feature references while depending on n8n-agent-rules for workflow/live n8n rules."
+    },
+    "mcp": {
+      "status": "not_applicable"
+    }
+  }
+}
